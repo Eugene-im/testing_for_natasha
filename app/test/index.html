@@ -1,0 +1,40 @@
+<script>
+    let time = (45 * 60)
+    let tic = setInterval(() => {
+        let str = "";
+        if (time > 0) time--
+        else tic = null;
+        var h = new Date(time * 1000).getHours();
+        var m = new Date(time * 1000).getMinutes();
+        var s = new Date(time * 1000).getSeconds();
+        h = (h < 10) ? "0" + h - 2 : h - 2;
+        m = (m < 10) ? "0" + m : m;
+        s = (s < 10) ? "0" + s : s;
+        str = m + ":" + s;
+        document.getElementsByClassName('clock')[0].innerHTML = str
+    }, 1000)
+</script>
+<div class="clock">
+    <span id="hours"></span>
+    <span>:</span>
+    <span id="minutes"></span>
+    <span>:</span>
+    <span id="seconds"></span>
+</div>
+<form method="post">
+    <div class="form-question" ng-repeat="(index,quest) in vm.quest">
+        <span class="num">{{index+1}}</span>
+        <span>.</span>
+        <span class="q">{{quest.question}}</span>
+        <div class="answer" ng-repeat=" (num,variant) in quest.variant">
+
+            <input type="radio" name="question {{quest.block}}.{{quest.num}}" id="v{{num}}_{{quest.block}}.{{quest.num}}" value="{{variant.value?'+':'-'}}"
+                required />
+            <label for="v{{num}}_{{quest.block}}.{{quest.num}}">{{variant.text}}</label>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-danger" ng-click="vm.sendAnsvers()">Завершити та відправити тестування</button>
+    </div>
+</form>

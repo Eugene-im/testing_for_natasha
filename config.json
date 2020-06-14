@@ -1,0 +1,7 @@
+﻿{
+    "connectionString": "mongodb://usver:11111111aA@ds245022.mlab.com:45022/test1",
+    "apiUrl": "http://localhost:3000/api",
+    "secret": "74185694fdf:asdqwbjgjdghknfyhDFHGGHj",
+    "questCount":5,
+    "mainQuestionBlockCount":1
+}

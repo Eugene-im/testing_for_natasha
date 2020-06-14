@@ -1,0 +1,298 @@
+{
+    "0":
+    {
+        "block": 1,
+        "num": 1,
+        "question": " Виберіть з наведених нижче прикладів, де ініціалізується зміна множинного типу даних.",
+        "variant": [
+        {
+            "text": " a = {1, 1, 1, 2, 2, 2, 3, 3, 3};",
+            "value": true
+        },
+        {
+            "text": " a = [1, 2, 3, 5, 6, 7, 7];",
+            "value": false
+        },
+        {
+            "text": " a = {a: 1, b: 1, c: 1, d: 2, t: 2};",
+            "value": false
+        },
+        {
+            "text": " a = “1 2 3 4 5 5 6 6 7 7”.",
+            "value": false
+        }]
+    },
+    "1":
+    {
+        "block": 1,
+        "num": 2,
+        "question": " Множина set – це послідовність …",
+        "variant": [
+        {
+            "text": " Mutable невпорядкована;",
+            "value": true
+        },
+        {
+            "text": " Mutable впорядкована;",
+            "value": false
+        },
+        {
+            "text": " immutable невпорядкована;",
+            "value": false
+        },
+        {
+            "text": " immutable впорядкована;",
+            "value": false
+        },
+        {
+            "text": " Немає вірної відповіді.",
+            "value": false
+        }]
+    },
+    "2":
+    {
+        "block": 1,
+        "num": 3,
+        "question": " В чому різниця між типом даних set і frozenset?",
+        "variant": [
+        {
+            "text": " Set створює Mutable множину, а frozenset – immutable;",
+            "value": true
+        },
+        {
+            "text": " Set створює immutable множину, а frozenset – Mutable;",
+            "value": false
+        },
+        {
+            "text": " В Set можуть включатися об’єкти різних типів даних, а в frozenset тільки одного типу;",
+            "value": false
+        }]
+    },
+    "3":
+    {
+        "block": 1,
+        "num": 4,
+        "question": " Як створюється пуста множина:",
+        "variant": [
+        {
+            "text": " a = set();",
+            "value": true
+        },
+        {
+            "text": " a = ();",
+            "value": false
+        },
+        {
+            "text": " a = {}.",
+            "value": false
+        }]
+    },
+    "4":
+    {
+        "block": 1,
+        "num": 5,
+        "question": " Задано дві множини: s1 = { 3,  '11',  2,  23, True} та s2 = { 11,  23,  False, 7, 11}. Що повертає операція s1 | s2 ?",
+        "variant": [
+        {
+            "text": " {False, True, 2, 3, 7, 11, '11', 23};",
+            "value": true
+        },
+        {
+            "text": " {False, 2, 7, 11, True, 23, 3};",
+            "value": false
+        },
+        {
+            "text": " {23};",
+            "value": false
+        },
+        {
+            "text": " {False, True, 2, 3, 7, 11, '11'}",
+            "value": false
+        },
+        {
+            "text": " {True, 2, '11', 3}",
+            "value": false
+        },
+        {
+            "text": " {False, 11, 7}",
+            "value": false
+        }]
+    },
+    "5":
+    {
+        "block": 1,
+        "num": 6,
+        "question": "Задано дві множини: s1 = { 3,  '11',  2,  23, True} та s2 = { 11,  23,  False, 7, 11}. Що повертає операція s1 & s2 ?",
+        "variant": [
+        {
+            "text": " {False, True, 2, 3, 7, 11, '11', 23};",
+            "value": false
+        },
+        {
+            "text": " {False, 2, 7, 11, True, 23, 3};",
+            "value": false
+        },
+        {
+            "text": " {23};",
+            "value": true
+        },
+        {
+            "text": " {False, True, 2, 3, 7, 11, '11'},",
+            "value": false
+        },
+        {
+            "text": "{True, 2, '11', 3},",
+            "value": false
+        },
+        {
+            "text": " {False, 11, 7}.",
+            "value": false
+        }]
+    },
+    "6":
+    {
+        "block": 1,
+        "num": 7,
+        "question": "Задано дві множини: s1 = { 3,  '11',  2,  23, True} та s2 = { 11,  23,  False, 7, 11}. Що повертає операція s1 - s2 ?",
+        "variant": [
+            {
+                "text": " {False, True, 2, 3, 7, 11, '11', 23};",
+                "value": false
+            },
+            {
+                "text": " {False, 2, 7, 11, True, 23, 3};",
+                "value": false
+            },
+            {
+                "text": " {23};",
+                "value": false
+            },
+            {
+                "text": " {False, True, 2, 3, 7, 11, '11'},",
+                "value": false
+            },
+            {
+                "text": "{True, 2, '11', 3},",
+                "value": true
+            },
+            {
+                "text": " {False, 11, 7}.",
+                "value": false
+            }]
+    },
+    "7":
+    {
+        "block": 1,
+        "num": 8,
+        "question": "Задано дві множини: s1 = { 3,  '11',  2,  23, True} та s2 = { 11,  23,  False, 7, 11}. Що повертає операція s1 ^ s2 ?",
+        "variant": [
+            {
+                "text": " {False, True, 2, 3, 7, 11, '11', 23};",
+                "value": false
+            },
+            {
+                "text": " {False, 2, 7, 11, True, 23, 3};",
+                "value": false
+            },
+            {
+                "text": " {23};",
+                "value": false
+            },
+            {
+                "text": " {False, True, 2, 3, 7, 11, '11'},",
+                "value": true
+            },
+            {
+                "text": "{True, 2, '11', 3},",
+                "value": false
+            },
+            {
+                "text": " {False, 11, 7}.",
+                "value": false
+            }]
+    },
+    "8":
+    {
+        "block": 1,
+        "num": 9,
+        "question": " Що робить наступний фрагмент коду: a = {3 ** i for i in range (5)} Оберіть вірний варіант.",
+        "variant": [
+        {            
+            "text": " Генерує множину, що складається зі значень ступеня трійки від 0 до 4;",
+            "value": true
+        },
+        {
+            "text": " Генерує множину, що складається зі значень ступеня трійки від 0 до 5;",
+            "value": false
+        },
+        {
+            "text": " Генерує список, що складається зі значень ступеня трійки від 0 до 4;",
+            "value": false
+        },
+        {
+            "text": " Генерує список, що складається зі значень ступеня трійки від 0 до 5.",
+            "value": false
+        }]
+    },
+    "9":
+    {
+        "block": 1,
+        "num": 10,
+        "question": " Що робить наступний фрагмент коду: a = {i**3 for i in range (11) if i% 3 == 0}. Оберіть вірний варіант.",
+        "variant": [
+            {            
+                "text": " Генерує множину, що складається зі значень кубів числа «і», яке кратне трьом (в діапазоні від 0 до 10);",
+                "value": true
+            },
+            {
+                "text": " Генерує множину, що складається зі значень кубів числа «і», яке кратне трьом (в діапазоні від 0 до 11);",
+                "value": false
+            },
+            {
+                "text": " Генерує список, що складається зі значень кубів числа «і», яке кратне трьом (в діапазоні від 0 до 10);",
+                "value": false
+            },
+            {
+                "text": " Генерує список, що складається зі значень кубів числа «і», яке кратне трьом (в діапазоні від 0 до 11).",
+                "value": false
+            }]
+    },
+    "10":
+    {
+        "block": 1,
+        "num": 11,
+        "question": " Словник dict – це набор об’єктів …",
+        "variant": [
+        {
+            "text": " Mutable;",
+            "value": true
+        },
+        {
+            "text": " Immutable ;",
+            "value": false
+        }]
+    },
+    "11":
+    {
+        "block": 1,
+        "num": 12,
+        "question": " Що робить наступний фрагмент коду: d = dict(a=1, b=2). Оберіть вірний варіант",
+        "variant": [
+        {
+            "text": " Створює словник з парою ключ=значення;",
+            "value": true
+        },
+        {
+            "text": " Створює словник з парою значення=ключ;",
+            "value": false
+        },
+        {
+            "text": " Нічого. Буде помилка;",
+            "value": false
+        },
+        {
+            "text": "Створює список зі значеннями.",
+            "value": false
+        }]
+    }
+}
